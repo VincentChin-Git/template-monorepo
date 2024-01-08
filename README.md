@@ -1,0 +1,1 @@
+This is a mono repository which use the same repository to write frontend(s) and backend(s).

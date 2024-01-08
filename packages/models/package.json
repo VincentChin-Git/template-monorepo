@@ -1,0 +1,16 @@
+{
+  "name": "@packages/models",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsc",
+    "tsc": "tsc"
+  },
+  "keywords": [],
+  "author": "Vincent Chin",
+  "license": "ISC",
+  "dependencies": {
+    "@packages/types": "workspace:*",
+    "mongoose": "^8.0.3"
+  }
+}

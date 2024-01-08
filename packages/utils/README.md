@@ -1,0 +1,1 @@
+shared utility function - basically pure function here

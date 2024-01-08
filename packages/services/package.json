@@ -1,0 +1,15 @@
+{
+  "name": "@packages/services",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsc",
+    "tsc": "tsc"
+  },
+  "keywords": [],
+  "author": "Vincent Chin",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.11.10"
+  }
+}

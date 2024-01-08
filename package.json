@@ -1,0 +1,36 @@
+{
+  "name": "template-monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "build": "pnpm -r run build",
+    "clean": "pnpm -r run clean && rimraf dist",
+    "dev": "pnpm -r run dev",
+    "lint": "pnpm -r run lint",
+    "lint:fix": "pnpm -r run lint:fix",
+    "lint:staged": "lint-staged",
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "husky install",
+    "prettier": "pnpm -r run prettier",
+    "prettier:fix": "pnpm -r run prettier:fix",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "pnpm -r run tsc"
+  },
+  "keywords": [],
+  "author": "Vincent Chin",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.1",
+    "@commitlint/config-conventional": "^17.6.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.1",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.0.2"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "pnpm run lint:fix"
+    ]
+  }
+}
