@@ -4,8 +4,8 @@
   "description": "",
   "private": true,
   "scripts": {
-    "build": "pnpm -r run build",
-    "clean": "pnpm -r run clean && rimraf dist",
+    "build:backend": "pnpm run clean && node scripts/build-backend.mjs && docker build -t backend:latest . --file ./backend.Dockerfile",
+    "clean": "rimraf dist frontend/dist",
     "dev": "pnpm -r --parallel run dev",
     "lint": "pnpm -r run lint",
     "lint:fix": "pnpm -r run lint:fix",
