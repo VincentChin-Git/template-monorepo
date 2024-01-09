@@ -1,3 +1,4 @@
+import { generateRandomNumber } from "@packages/utils";
 import { useEffect } from "react";
 
 import testApi from "../api/test";
@@ -13,6 +14,7 @@ const Index = () => {
   };
   useEffect(() => {
     getInfo();
+    console.log("test packages:", generateRandomNumber(6));
   }, []);
 
   return <div>This is Index / Root, do any initalisation here.</div>;

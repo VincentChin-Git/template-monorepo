@@ -18,6 +18,7 @@
   "dependencies": {
     "@ant-design/icons": "^5.2.6",
     "@packages/types": "workspace:*",
+    "@packages/utils": "workspace:*",
     "@phosphor-icons/react": "^2.0.14",
     "@reduxjs/toolkit": "^1.9.7",
     "antd": "^5.11.3",

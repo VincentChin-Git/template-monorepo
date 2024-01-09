@@ -23,3 +23,12 @@ export const generateResPaging = (
   ctx.status = 200;
   ctx.body = { data, code, count, success: true };
 };
+
+export const generateRandomNumber = (digits: number) => {
+  let result = "";
+  if (digits <= 0) return result;
+  for (let index = 0; index < digits; index++) {
+    result += Math.floor(Math.random() * 10);
+  }
+  return result;
+};
